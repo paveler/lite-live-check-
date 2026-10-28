@@ -1,6 +1,6 @@
 {
   "sysName": "tool",
-  "name": "Tools (live check)",
+  "name": "Tools (agent check)",
   "folder": "assistant",
   "fields": [
     {
