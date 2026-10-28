@@ -1,0 +1,7 @@
+# lite: begin — managed by Lite, edits inside are replaced
+secrets.local.json
+lite.local.toml
+credentials.key
+.lite.lock
+.lite-*
+# lite: end
