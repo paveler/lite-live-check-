@@ -1,6 +1,6 @@
 {
   "sysName": "tool",
-  "name": "Tools (ui check)",
+  "name": "Tools (from a pull request)",
   "folder": "assistant",
   "fields": [
     {
