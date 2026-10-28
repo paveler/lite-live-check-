@@ -1,0 +1,75 @@
+{
+  "sysName": "chat_message",
+  "name": "Chat messages",
+  "folder": "assistant",
+  "fields": [
+    {
+      "sysName": "id",
+      "name": "ID",
+      "type": "id"
+    },
+    {
+      "sysName": "session",
+      "name": "Session",
+      "type": "link",
+      "link": "chat_session"
+    },
+    {
+      "sysName": "payload",
+      "name": "StoredMessage",
+      "type": "json"
+    },
+    {
+      "sysName": "role",
+      "name": "Role",
+      "type": "string"
+    },
+    {
+      "sysName": "seq",
+      "name": "Sequence number",
+      "type": "number"
+    },
+    {
+      "sysName": "run",
+      "name": "Run",
+      "type": "link",
+      "link": "run"
+    },
+    {
+      "sysName": "revision",
+      "name": "Revision",
+      "type": "number"
+    },
+    {
+      "sysName": "audit",
+      "name": "Audit",
+      "type": "json"
+    },
+    {
+      "sysName": "created_at",
+      "name": "Created at",
+      "type": "date"
+    },
+    {
+      "sysName": "text",
+      "name": "Text",
+      "type": "string"
+    }
+  ],
+  "indexes": [
+    {
+      "fields": [
+        {
+          "name": "session"
+        },
+        {
+          "name": "seq"
+        }
+      ],
+      "unique": true
+    }
+  ],
+  "history": {
+    "depth": 0
+  }
+}

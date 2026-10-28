@@ -1,0 +1,74 @@
+{
+  "sysName": "assistant",
+  "name": "Assistants",
+  "folder": "assistant",
+  "fields": [
+    {
+      "sysName": "id",
+      "name": "ID",
+      "type": "id"
+    },
+    {
+      "sysName": "name",
+      "name": "Name",
+      "type": "string"
+    },
+    {
+      "sysName": "provider",
+      "name": "Provider",
+      "type": "string"
+    },
+    {
+      "sysName": "model",
+      "name": "Model",
+      "type": "string"
+    },
+    {
+      "sysName": "system_prompt",
+      "name": "System prompt",
+      "type": "string",
+      "format": "markdown"
+    },
+    {
+      "sysName": "model_prompt",
+      "name": "Model prompt",
+      "type": "string",
+      "format": "markdown"
+    },
+    {
+      "sysName": "params",
+      "name": "Parameters",
+      "type": "json"
+    },
+    {
+      "sysName": "limits",
+      "name": "Limits",
+      "type": "json"
+    },
+    {
+      "sysName": "pricing",
+      "name": "Pricing",
+      "type": "json"
+    },
+    {
+      "sysName": "stream_expose",
+      "name": "Expose stream",
+      "type": "boolean"
+    },
+    {
+      "sysName": "output_checks",
+      "name": "Output checks",
+      "type": "json"
+    },
+    {
+      "sysName": "tools",
+      "name": "Tools",
+      "type": "arrayLink",
+      "link": "tool"
+    }
+  ],
+  "viewFields": [
+    "name",
+    "model"
+  ]
+}

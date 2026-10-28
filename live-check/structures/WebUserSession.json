@@ -1,0 +1,21 @@
+{
+  "sysName": "WebUserSession",
+  "name": "App user sessions",
+  "system": true,
+  "fields": [
+    {
+      "sysName": "sessionId",
+      "name": "Session token",
+      "type": "id"
+    },
+    {
+      "sysName": "webUserId",
+      "name": "User",
+      "type": "link",
+      "link": "WebUser"
+    }
+  ],
+  "history": {
+    "depth": 0
+  }
+}

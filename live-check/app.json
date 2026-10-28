@@ -1,0 +1,5 @@
+{
+  "version": "3.0",
+  "name": "assistant-demo",
+  "description": "Demo project: the structures of an AI assistant package. Field types are a sketch for the build loop, not a final contract."
+}

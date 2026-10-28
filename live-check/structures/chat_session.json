@@ -1,0 +1,45 @@
+{
+  "sysName": "chat_session",
+  "name": "Chat sessions",
+  "folder": "assistant",
+  "fields": [
+    {
+      "sysName": "id",
+      "name": "ID",
+      "type": "id"
+    },
+    {
+      "sysName": "assistant",
+      "name": "Assistant",
+      "type": "link",
+      "link": "assistant"
+    },
+    {
+      "sysName": "state",
+      "name": "State",
+      "type": "string",
+      "indexing": true
+    },
+    {
+      "sysName": "active_run",
+      "name": "Active run",
+      "type": "link",
+      "link": "run"
+    },
+    {
+      "sysName": "pending_call_ids",
+      "name": "Awaiting result",
+      "type": "array"
+    },
+    {
+      "sysName": "history_revision",
+      "name": "History revision",
+      "type": "number"
+    },
+    {
+      "sysName": "@dateCreated",
+      "name": "Created at",
+      "type": "date"
+    }
+  ]
+}

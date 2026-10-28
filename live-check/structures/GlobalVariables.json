@@ -1,0 +1,17 @@
+{
+  "sysName": "GlobalVariables",
+  "name": "Global variables",
+  "system": true,
+  "fields": [
+    {
+      "sysName": "id",
+      "name": "Name",
+      "type": "id"
+    },
+    {
+      "sysName": "value",
+      "name": "Value",
+      "type": "string"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "sysName": "WebUser",
+  "name": "App users",
+  "system": true,
+  "fields": [
+    {
+      "sysName": "id",
+      "name": "Login",
+      "type": "id"
+    },
+    {
+      "sysName": "password",
+      "name": "Password hash",
+      "type": "string",
+      "sensitive": true
+    },
+    {
+      "sysName": "role",
+      "name": "Roles",
+      "type": "array"
+    },
+    {
+      "sysName": "isBlocked",
+      "name": "Blocked",
+      "type": "boolean"
+    }
+  ]
+}

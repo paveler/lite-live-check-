@@ -1,0 +1,51 @@
+{
+  "sysName": "sessions",
+  "name": "Sessions",
+  "folder": "assistant",
+  "structure": "chat_session",
+  "path": "sessions",
+  "layers": [
+    {
+      "conditions": [
+        {
+          "field": "state",
+          "exp": "!=",
+          "value": "closed"
+        }
+      ],
+      "conditionsType": "AND",
+      "read": [
+        {
+          "field": "id"
+        },
+        {
+          "field": "state"
+        },
+        {
+          "field": "assistant",
+          "fetch": [
+            {
+              "field": "name"
+            },
+            {
+              "field": "model"
+            }
+          ]
+        },
+        {
+          "field": "active_run",
+          "fetch": [
+            {
+              "field": "status"
+            }
+          ]
+        }
+      ],
+      "write": [
+        {
+          "field": "state"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "sysName": "run",
+  "name": "Runs",
+  "folder": "assistant",
+  "fields": [
+    {
+      "sysName": "id",
+      "name": "ID",
+      "type": "id"
+    },
+    {
+      "sysName": "session",
+      "name": "Session",
+      "type": "link",
+      "link": "chat_session"
+    },
+    {
+      "sysName": "status",
+      "name": "Status",
+      "type": "string",
+      "indexing": true
+    },
+    {
+      "sysName": "result",
+      "name": "Result",
+      "type": "json"
+    },
+    {
+      "sysName": "deadline_at",
+      "name": "Deadline",
+      "type": "date",
+      "indexing": true
+    },
+    {
+      "sysName": "acked",
+      "name": "Acknowledged",
+      "type": "boolean"
+    },
+    {
+      "sysName": "usage",
+      "name": "Usage",
+      "type": "json"
+    }
+  ],
+  "history": {
+    "depth": 0
+  }
+}

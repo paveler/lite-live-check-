@@ -1,0 +1,42 @@
+{
+  "sysName": "tool",
+  "name": "Tools",
+  "folder": "assistant",
+  "fields": [
+    {
+      "sysName": "id",
+      "name": "Tool name",
+      "type": "id"
+    },
+    {
+      "sysName": "description",
+      "name": "Description",
+      "type": "string"
+    },
+    {
+      "sysName": "input_schema",
+      "name": "Input schema",
+      "type": "json"
+    },
+    {
+      "sysName": "endpoint",
+      "name": "Endpoint",
+      "type": "string"
+    },
+    {
+      "sysName": "headers",
+      "name": "Headers",
+      "type": "json"
+    },
+    {
+      "sysName": "timeout_ms",
+      "name": "Timeout, ms",
+      "type": "number"
+    },
+    {
+      "sysName": "effect",
+      "name": "Effect",
+      "type": "string"
+    }
+  ]
+}

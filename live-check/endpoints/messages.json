@@ -1,0 +1,42 @@
+{
+  "sysName": "messages",
+  "name": "Messages",
+  "folder": "assistant",
+  "structure": "chat_message",
+  "path": "messages",
+  "sort": "seq",
+  "layers": [
+    {
+      "conditions": [
+        {
+          "field": "role",
+          "exp": "!=",
+          "value": "system"
+        }
+      ],
+      "conditionsType": "AND",
+      "read": [
+        {
+          "field": "id"
+        },
+        {
+          "field": "role"
+        },
+        {
+          "field": "seq"
+        },
+        {
+          "field": "text"
+        },
+        {
+          "field": "session",
+          "fetch": [
+            {
+              "field": "state"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

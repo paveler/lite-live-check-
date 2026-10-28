@@ -1,0 +1,32 @@
+{
+  "sysName": "FileUpload",
+  "name": "Files",
+  "system": true,
+  "fields": [
+    {
+      "sysName": "uuid",
+      "name": "ID",
+      "type": "id"
+    },
+    {
+      "sysName": "urlLink",
+      "name": "URL",
+      "type": "string"
+    },
+    {
+      "sysName": "originalFileName",
+      "name": "Original file name",
+      "type": "string"
+    },
+    {
+      "sysName": "extension",
+      "name": "Extension",
+      "type": "string"
+    },
+    {
+      "sysName": "size",
+      "name": "Size",
+      "type": "number"
+    }
+  ]
+}
